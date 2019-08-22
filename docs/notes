@@ -1,0 +1,24 @@
+# Arabic encoding:
+
+## in python script:
+reload(sys)
+sys.setdefaultencoding('utf8')
+
+## before running fgdb2postgis
+in windows command prompt:
+chcp 1256
+
+# After conversion
+
+## execute sql scripts from command line:
+"C:\Program Files\PostgreSQL\10\bin\psql.exe" -U postgres
+
+postgres# \c assir;
+assir# \i 13122018.gdb.sql/fix_data_errors.sql
+
+## apply the rest of sql scripts from pgadmin4 because of Arabic enconding issues in the terminal 
+create_indexes.sql
+create_constraints.sql
+create_schemas.sql
+split_schemas.sql
+

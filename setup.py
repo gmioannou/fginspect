@@ -1,20 +1,30 @@
-
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
+PACKAGE = 'fginspect'
+VERSION = __import__(PACKAGE).__version__
+
 config = {
-    'description': 'My Project',
-    'author': 'My Name',
-    'url': 'URL to get it at.',
-    'download_url': 'Where to download it.',
-    'author_email': 'My email.',
-    'version': '0.1',
-    'install_requires': ['nose'],
+    'description': 'Inspect ESRI File Geodatabase',
+    'author': 'George Ioannou',
+    'url': 'http://github.com/gmioannou/fginspect',
+    'download_url': 'http://github.com/gmioannou/fginspect',
+    'author_email': 'gmioannou@gmail.com',
+    'version': VERSION,
+    'install_requires': [
+		'ConfigParser>=3.5.0',
+        'pyyaml>=3.12'
+	],
     'packages': ['fginspect'],
     'scripts': [],
-    'name': 'projectname'
+    'name': 'fginspect',
+	'entry_points': {
+	    'console_scripts': [
+			'fginspect = fginspect.fginspect:main'
+		]
+	},
 }
 
 setup(**config)

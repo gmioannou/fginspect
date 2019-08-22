@@ -5,7 +5,7 @@
 ### The report lists:
 - `Datasets`
 - `Feature classes`
-- `Feature classes fi`
+- `Feature classes fields`
 - `Tables`
 - `Tables fields`
 - `Domains`

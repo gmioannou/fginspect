@@ -1,7 +1,4 @@
 {
-  "python.pythonPath": "C:\\Users\\geo\\envs\\kisr\\Scripts\\python.exe",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.autopep8"
-  },
+  "python.pythonPath": "C:\\Users\\george\\AppData\\Local\\ESRI\\conda\\envs\\esri-py\\python.exe",
   "python.formatting.provider": "none"
 }

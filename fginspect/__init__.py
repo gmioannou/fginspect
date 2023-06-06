@@ -1,3 +1,3 @@
 # __init__.py
 __author__ = 'George Ioannou'
-__version__ = 0.1
+__version__ = 0.2

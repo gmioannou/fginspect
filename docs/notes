@@ -1,24 +1,14 @@
-# Arabic encoding:
+## Usage: fginspect filegdb
 
-## in python script:
-reload(sys)
-sys.setdefaultencoding('utf8')
+### Inspect ESRI File Geodatabase and create a report in the same folder.
 
-## before running fgdb2postgis
-in windows command prompt:
-chcp 1256
+### The report lists:
 
-# After conversion
-
-## execute sql scripts from command line:
-"C:\Program Files\PostgreSQL\10\bin\psql.exe" -U postgres
-
-postgres# \c assir;
-assir# \i 13122018.gdb.sql/fix_data_errors.sql
-
-## apply the rest of sql scripts from pgadmin4 because of Arabic enconding issues in the terminal 
-create_indexes.sql
-create_constraints.sql
-create_schemas.sql
-split_schemas.sql
-
+- `Datasets`
+- `Feature classes`
+- `Feature classes fields`
+- `Tables`
+- `Tables fields`
+- `Domains`
+- `Subtypes`
+- `Relationships`

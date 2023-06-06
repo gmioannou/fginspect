@@ -1,3 +1,7 @@
 {
-    "python.pythonPath": "C:\\Users\\geo\\envs\\kisr\\Scripts\\python.exe"
+  "python.pythonPath": "C:\\Users\\geo\\envs\\kisr\\Scripts\\python.exe",
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+  "python.formatting.provider": "none"
 }

@@ -14,17 +14,17 @@ config = {
     'author_email': 'gmioannou@gmail.com',
     'version': VERSION,
     'install_requires': [
-		'ConfigParser>=3.5.0',
+        'ConfigParser>=3.5.0',
         'pyyaml>=3.12'
-	],
+    ],
     'packages': ['fginspect'],
     'scripts': [],
     'name': 'fginspect',
-	'entry_points': {
-	    'console_scripts': [
-			'fginspect = fginspect.fginspect:main'
-		]
-	},
+    'entry_points': {
+            'console_scripts': [
+                'fginspect = fginspect.fginspect:main'
+            ]
+    },
 }
 
 setup(**config)
